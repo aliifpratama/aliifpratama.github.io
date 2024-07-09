@@ -6,6 +6,13 @@ excerpt: All achievements.
 comments: false
 ---
 
+<!-- Deskripsi di atas daftar pencapaian -->
+<div style="text-align: center; margin-bottom: 40px;">
+    <p style="font-size: 0.9em; color: #555; margin-top: -10px;">
+        The Achievements I Got From Zero To Hero.
+    </p>
+</div>
+
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
     {%- assign achievements = site.data.achievements -%}
     {%- for achievement in achievements -%}
@@ -15,7 +22,8 @@ comments: false
                 style="width: 100%; height: auto; display: block; margin-bottom: 5px;" />
             <div style="padding: 10px;">
                 <h3 style="margin-bottom: 5px;">{{ achievement.title | escape }}</h3>
-                <p style="font-style: italic; color: #555; margin-top: 0;">{{ achievement.date | date: "%B %d, %Y" }}
+                <p style="font-style: italic; color: #555; margin-top: 0;">
+                    {{ achievement.date | date: "%B %d, %Y" }}
                 </p>
             </div>
         </a>

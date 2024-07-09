@@ -13,7 +13,7 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Muhammad Aliif Pratama  # author name
   bio: >- # tell to the world
-    Léift an Hoffnung <a href="https://www.instagram.com/alxfpratama" target="_blank" rel="noopener">@Insta</a>.
+    Léift an Hoffnung <a href="https://www.instagram.com/alxfpratama" target="_blank" rel="noopener">@insta</a>.
   username: username # general username
   github: alyyfe # github username
   twitter: twitter_username # twitter username
