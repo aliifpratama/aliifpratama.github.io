@@ -1,0 +1,24 @@
+---
+title: Achievements
+permalink: /achievements/
+layout: page
+excerpt: All achievements.
+comments: false
+---
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    {%- assign achievements = site.data.achievements -%}
+    {%- for achievement in achievements -%}
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
+        <a href="{{ achievement.url }}" style="text-decoration: none; color: inherit; display: block;">
+            <img src="{{ achievement.image }}" alt="{{ achievement.title | escape }}"
+                style="width: 100%; height: auto; display: block; margin-bottom: 5px;" />
+            <div style="padding: 10px;">
+                <h3 style="margin-bottom: 5px;">{{ achievement.title | escape }}</h3>
+                <p style="font-style: italic; color: #555; margin-top: 0;">{{ achievement.date | date: "%B %d, %Y" }}
+                </p>
+            </div>
+        </a>
+    </div>
+    {%- endfor -%}
+</div>
