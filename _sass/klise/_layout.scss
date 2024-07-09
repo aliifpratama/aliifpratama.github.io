@@ -226,43 +226,44 @@
 // List of posts
 .post-item {
   display: flex;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  @extend %clearfix;
+  align-items: center; // Menjaga elemen agar sejajar secara vertikal
+  padding: 5px 0; // Menyederhanakan padding atas dan bawah
+  border-top: 1px solid $light; // Menambahkan batas atas pada elemen yang bukan yang pertama
 
-  &:not(:first-child) {
-    border-top: 1px solid $light;
+  &:first-child {
+    border-top: none; // Menghapus batas atas pada elemen pertama
   }
 
   .post-item-date {
+    flex-shrink: 0; // Mencegah tanggal menyusut
     min-width: 96px;
     color: $black;
     font-weight: 700;
-    padding-right: 10px;
+    padding-right: 15px; // Jarak di dalam elemen tanggal
+    margin-right: 15px; // Jarak horizontal antara tanggal dan judul
 
     @include media-query($on-mobile) {
-      font-size: 16px;
+      min-width: auto; // Mengizinkan tanggal menyesuaikan lebarnya pada layar kecil
+      margin-right: 10px; // Menyesuaikan jarak di layar kecil
+      font-size: 14px; // Mengurangi ukuran font jika diperlukan
     }
   }
 
   .post-item-title {
+    flex: 1; // Membuat judul menggunakan ruang yang tersisa
     margin: 0;
-    border: 0;
     padding: 0;
     font-size: $base-font-size;
     font-weight: normal;
     letter-spacing: 0.1px;
+    overflow-wrap: break-word; // Memungkinkan teks untuk membungkus jika terlalu panjang
 
-    a {
-      color: $text-base-color;
-
-      &:hover,
-      &focus {
-        color: $black;
-      }
+    @include media-query($on-mobile) {
+      font-size: 16px; // Mengatur ukuran font untuk tampilan mobile
     }
   }
 }
+
 
 // Footer
 .footer {
