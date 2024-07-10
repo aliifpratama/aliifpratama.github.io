@@ -16,5 +16,7 @@ Soon , masih males nulis
 
 **may u needs ✨**
 
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+- [{{ site.author.email }}](mailto:{{ site.author.email }})
+- [github.com/{{ site.author.github }}](https://github.com/{{ site.author.github }})
+- [linkedin.com/in/{{ site.author.linkedin }}](https://www.linkedin.com/in/{{ site.author.linkedin }})
+- [instagram.com/{{ site.author.instagram }}](https://www.instagram.com/{{ site.author.instagram }})

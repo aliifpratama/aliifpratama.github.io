@@ -6,11 +6,11 @@
   url: /archive/
   external: false
 
-- title: ~/Achievement
+- title: ~/achievement
   url: /achievements/
   external: false
 
-- title: ~/Project
+- title: ~/project
   url: /project/
   external: false 
 

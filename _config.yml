@@ -14,15 +14,15 @@ author:
   name: Muhammad Aliif Pratama  # author name
   bio: >- # tell to the world
     Léift an Hoffnung <a href="https://www.instagram.com/alxfpratama" target="_blank" rel="noopener">@insta</a>.
-  username: username # general username
+  username: aliifpratama # general username
   github: alyyfe # github username
-  twitter: twitter_username # twitter username
-  facebook: facebook_username # facebook username
-  email: alxfpratama@gmail.com # email adress
+  linkedin: aliif-pratama # linkedin username
+  instagram: alxfpratama # instagram username
+  email: alxfpratama@gmail.com # email address
   avatar: /assets/img/dragon.gif # change with your own avatar
 
 # URL settings
-url: "https://google.com" #
+url: "/" #
 baseurl:
 permalink: /:title/
 google_analytics: # leave it blank if not wish
